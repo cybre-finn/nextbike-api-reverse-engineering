@@ -17,7 +17,6 @@ You can either get the the api key via the endpoint or use the hardcoded one.
     * from binary: `rXXqTgQZUPZ89lzB`
 
 ## Get API Key
-----
 Returns API key as JSON
 
 * **Full URL**
@@ -38,7 +37,6 @@ Returns API key as JSON
   `curl https://webview.nextbike.net/getAPIKey.json`
 
 ## Login
----
 Logs user in and returns user info and server time
 
 * **URL**
@@ -101,7 +99,6 @@ Logs user in and returns user info and server time
     `curl -X POST -F 'mobile=023421337' -F 'pin=666421' -F 'apikey=rXXqTgQZUPZ89lzB' -F 'show_errors=1' https://api.nextbike.net/api/login.json`
 
 ## Rent bike
----
 Starts rental of bike and returns bike data
 
 * **URL**
@@ -180,7 +177,6 @@ Starts rental of bike and returns bike data
     `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
 
 ## Return Bike
----
 Ends rental at given station
 
 * **URL**
@@ -252,7 +248,6 @@ Ends rental at given station
     `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
 
 ## Map Discovery
----
 Map endpoint has list of all the bikes
 
 * **URL**
