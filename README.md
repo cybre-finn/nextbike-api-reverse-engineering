@@ -1,10 +1,22 @@
 # nextbike-api-reverse-engineering
 
-This API documentation is what I got from reverse engineering the nextcloud app. It's mainly based on the earlier webview based version (pre-4.x) but so far it looks like the latest app uses the same API calls.
+This HTTP-API documentation is what I got from reverse engineering the nextcloud app.
 
-## Base URL
-* Base URL: https://api.nextbike.net
-* Webview URL; https://webview.nextbike.net
+There are two different apps:
+
+A web view based app which was discontinued. The interface is still available, though. It's a monolithic javascript web app, performing ajax requests to an API. They use xml format (with .xml endings) for the most requests (although similar functionality is given when changing the suffix to .json)
+
+A native app, which replaces the 1. app since version 4.x (probably).
+
+## Base URL and Versioning
+All the API versions listed here seem to deliver the same functionality (unconfirmed).
+
+* Base URL: https://api.nextbike.net/
+    * api/ *used as standard here*
+    * api/v1.1/
+    * api2/
+
+* Webview URL: https://webview.nextbike.net/
 
 ## Obtaing API key
 It seems as they use hardcoded API keys in their new, (probably) native app. In the old webview based app, the endpoint `https://webview.nextbike.net/getAPIKey.json` returns a key that is always the same. Maybe they change it when bumping versions in the app or regularly in the webview endpoint.
