@@ -279,3 +279,48 @@ Map endpoint has list of all the bikes
 * **Sample Call:**
 
     `curl https://api.nextbike.net/maps/nextbike-official.json?countries=pl,de`
+
+## Other known endpoints
+Reverse engineered from native (?) app:
+
+* api/v1.1/vcnGetOffers.json
+* api/v1.1/vcnGetOffers.json
+* api/v1.1/vcnGetEnrollmentUrl.json
+* api/v1.1/vcnUnenroll.json
+* api/v1.1/acceptAgreement.json
+* api/v1.1/getAgreementDataForDomain.json
+* api/v1.1/getFlexzones.json
+* api/v1.1/getUserDetails.json
+* api/v1.1/login.json
+* /api/v1.1/booking.json
+* /api/v1.1/cancelBooking.json
+* api/v1.1/sendErrorReport.json
+* api/v1.1/getUnlockLinks.json
+* api/v1.1/getBikeState.json
+* api/v1.1/getAvailablePartners.json
+* api/v1.1/getPaymentLinks.json
+* api/v1.1/getRentalDetails.json
+* api/v1.1/getUserDetails.json
+* api/v1.1/infoFeed.json
+* api/v1.1/infoFeed.json
+* api/v1.1/getNews.json
+* api/v1.1/getNews.json
+* api/v1.1/openLock.json
+* api/v1.1/rentalBreak.json
+* api/v1.1/pinRecover.json
+* api/v1.1/register.json
+* api/v1.1/rent.json
+* /api2/rent.json
+* api/v1.1/rentals.json
+* api/v1.1/return.json
+* api/v1.1/return.json
+* api/v1.1/setAdId.json
+* api/v1.1/addAppMessageId.json
+* api/v1.1/updateRental.json
+* api/v1.1/updateRental.json
+* api/v1.1/getBranding.json
+* maps/nextbike-live.json?list_cities=1
+* maps/nextbike-live.json?bikes=0
+* maps/nextbike-live.json?bikes=0
+* maps/nextbike-live.json?bikes=0
+* api/v1.1/getPlaceDetails.json
