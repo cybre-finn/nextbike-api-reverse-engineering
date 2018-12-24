@@ -259,6 +259,82 @@ Ends rental at given station
 
     `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
 
+
+## Get Active Rentals
+Provides a list of your current rentals.
+
+* **URL**
+
+    /api/getOpenRentals.json
+
+* **Method:**
+
+    `GET`
+
+* **Form Data Params**
+
+    * `apikey=[string]`
+    * `loginkey=[string]`
+    * `show_errors: [integer]`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+  *  **Content:** 
+    ```JSON
+    {
+        "server_time":1545615003,
+        "rentalCollection":[
+            {
+                "node":"rental",
+                "id":63781794,
+                "show_close_lock_info":false,
+                "invalid":false,
+                "return_via_app":false,
+                "return_to_official_only":true,
+                "city_id":7,
+                "city":"Wiesbaden",
+                "domain":"de",
+                "bike":"<bike number>",
+                "boardcomputer":23829,
+                "customer_comment":"",
+                "electric_lock":true,
+                "biketype":15,
+                "lock_types":[
+                    "fork_lock"
+                ],
+                "code":"<lock code>",
+                "start_place":4775082,
+                "start_place_lat":50.050828206632,
+                "start_place_lng":8.2480899381638,
+                "start_place_name":"Grossdorfplatz",
+                "start_rack":0,
+                "end_place":0,
+                "end_place_lat":0,
+                "end_place_lng":0,
+                "end_place_name":null,
+                "start_time":1545614993,
+                "end_time":0,
+                "price":0,
+                "price_service":0,
+                "rfid_uid":0,
+                "review_state":0,
+                "trip_type":0,
+                "app_campaign_picture":"",
+                "app_campaign_picture_link":"",
+                "app_campaign_uid":0,
+                "ad4x20":null,
+                "break":false,
+                "rating":0
+            }
+        ]
+    }
+    ```
+* **Sample Call:**
+
+    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/getOpenRentals.json`
+
+
 ## Map Discovery
 Map endpoint has list of all the bikes
 
