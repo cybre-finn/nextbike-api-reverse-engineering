@@ -26,7 +26,7 @@ You can either get the the api key via the endpoint or use the hardcoded one.
 * **Keys**
 
     * https://webview.nextbike.net/getAPIKey.json
-    * from binary: `rXXqTgQZUPZ89lzB`
+    * from binary: `rXXqT**ZUP**9l**`
 
 ## Get API Key
 Returns API key as JSON
