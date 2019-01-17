@@ -205,7 +205,8 @@ Ends rental at given station
     * `loginkey=[string]`
     * `bike=[integer]`
     * `comment: [string]` *note: for experience*
-    * `place: [integer]` *note: arrival station*
+    * `place: [integer]` *this OR "station", note: somewhat internal station id*
+    * `station: [integer]` *this OR "place", note: the actual id written on the station*
     * `show_errors: [integer]`
 
 * **Success Response:**
