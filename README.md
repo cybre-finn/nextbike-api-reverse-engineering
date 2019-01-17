@@ -1,6 +1,6 @@
 # nextbike-api-reverse-engineering
 
-This HTTP-API documentation is what I got from reverse engineering the nextcloud app.
+This HTTP-API documentation is what I got from reverse engineering the nextbike app.
 
 There are two different apps:
 
