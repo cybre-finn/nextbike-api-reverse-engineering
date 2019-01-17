@@ -258,7 +258,7 @@ Ends rental at given station
     ```
 * **Sample Call:**
 
-    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
+    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/return.json`
 
 
 ## Get Active Rentals
