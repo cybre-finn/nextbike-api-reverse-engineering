@@ -108,7 +108,7 @@ Logs user in and returns user info and server time
 
 * **Sample Call:**
 
-    `curl -X POST -F 'mobile=023421337' -F 'pin=666421' -F 'apikey=rXXqTgQZUPZ89lzB' -F 'show_errors=1' https://api.nextbike.net/api/login.json`
+    `curl -X POST -F 'mobile=023421337' -F 'pin=666421' -F 'apikey=rXXqT**ZUP**9l**' -F 'show_errors=1' https://api.nextbike.net/api/login.json`
 
 ## Rent bike
 Starts rental of bike and returns bike data
@@ -186,7 +186,7 @@ Starts rental of bike and returns bike data
 
 * **Sample Call:**
 
-    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
+    `curl -X POST -F 'apikey=rXXqT**ZUP**9l**' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/rent.json`
 
 ## Return Bike
 Ends rental at given station
@@ -259,7 +259,7 @@ Ends rental at given station
     ```
 * **Sample Call:**
 
-    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/return.json`
+    `curl -X POST -F 'apikey=rXXqT**ZUP**9l**' -F 'bike=<bike number>' -F 'loginkey=<loginkey>' -F 'comment=Lock+broken' -F 'place=<station number>' -F 'show_errors=1' https://api.nextbike.net/api/return.json`
 
 
 ## Get Active Rentals
@@ -334,7 +334,7 @@ Provides a list of your current rentals.
     ```
 * **Sample Call:**
 
-    `curl -X POST -F 'apikey=rXXqTgQZUPZ89lzB' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/getOpenRentals.json`
+    `curl -X POST -F 'apikey=rXXqT**ZUP**9l**' -F 'loginkey=<loginkey>' -F 'show_errors=1' https://api.nextbike.net/api/getOpenRentals.json`
 
 
 ## Map Discovery
